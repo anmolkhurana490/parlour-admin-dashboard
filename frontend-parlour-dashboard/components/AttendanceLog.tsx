@@ -3,7 +3,7 @@ import { io } from 'socket.io-client'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow, } from "@/components/ui/table"
 // import { getData } from "@/lib/data"
 
-const BACKEND_URL = 'http://localhost:5000'
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000'
 
 interface Attendance {
   _id: string;

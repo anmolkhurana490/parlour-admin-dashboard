@@ -1,7 +1,7 @@
 import axios, { Axios, AxiosResponse } from 'axios';
 import { error } from 'console';
 
-const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:5000';
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
 
 export const loginHandler = async (email: string, password: string) => {
     try {
