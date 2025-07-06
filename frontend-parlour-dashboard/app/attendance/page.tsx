@@ -5,7 +5,7 @@ import { getData } from "@/lib/data";
 import { Switch } from "@/components/ui/switch"
 import { getAttendanceData, punchAttendance } from "@/lib/data";
 
-const page = () => {
+const Page = () => {
     return (
         <div className="mx-16">
             <h1 className="text-2xl my-4 font-bold">Employee Attendance - Punch In/Out</h1>
@@ -76,4 +76,4 @@ const AttendanceTable = () => {
     )
 }
 
-export default page;
+export default Page;

@@ -26,7 +26,7 @@ const AdminTable = ({ editable }: { editable: boolean }) => {
     }, [])
 
     const [newRowData, setNewRowData] = useState<Admin | null>(null);
-    const [editingId, setEditingId] = useState<String | null>(null);
+    const [editingId, setEditingId] = useState<string | null>(null);
 
     const addNewData = async () => {
         const response = await postData('admins', newRowData);

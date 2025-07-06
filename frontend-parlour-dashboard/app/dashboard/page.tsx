@@ -6,7 +6,7 @@ import EmployeeTable from '@/components/EmployeeTable';
 import TaskTable from '@/components/TaskTable';
 import AdminTable from '@/components/AdminTable';
 
-const page = () => {
+const Page = () => {
     const context = useContext(AppContext);
     if (!context) {
         throw new Error("AppContext must be used within an AppProvider");
@@ -54,4 +54,4 @@ const page = () => {
     );
 }
 
-export default page;
+export default Page;
