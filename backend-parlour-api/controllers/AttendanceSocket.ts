@@ -1,6 +1,6 @@
 import { Server } from 'socket.io';
-import { getAllRecords, getFilteredRecord } from './AttendanceControllers';
-import { Employee } from '../models/EmployeeSchema';
+import { getAllRecords, getFilteredRecord } from './AttendanceControllers.js';
+import { Employee } from '../models/EmployeeSchema.js';
 import http from 'http';
 
 const AttendanceSocket = (server: http.Server) => {
