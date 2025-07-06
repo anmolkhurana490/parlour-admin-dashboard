@@ -1,17 +1,17 @@
 import express from 'express';
-import { connectDB } from './config/db.js';
+import { connectDB } from './config/db';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import http from 'http';
 
-import AuthRouter from './routes/AuthRouter.js';
-import EmployeeRouter from './routes/EmployeeRouter.js';
-import AttendanceRouter from './routes/AttendanceRouter.js';
-import AdminRouter from './routes/AdminRouter.js';
-import AuthMiddleware from './middlewares/AuthMiddleware.js';
-import TaskRouter from './routes/TaskRouter.js';
-import AttendanceSocket from './controllers/AttendanceSocket.js';
+import AuthRouter from './routes/AuthRouter';
+import EmployeeRouter from './routes/EmployeeRouter';
+import AttendanceRouter from './routes/AttendanceRouter';
+import AdminRouter from './routes/AdminRouter';
+import AuthMiddleware from './middlewares/AuthMiddleware';
+import TaskRouter from './routes/TaskRouter';
+import AttendanceSocket from './controllers/AttendanceSocket';
 
 import dotenv from "dotenv";
 dotenv.config({ quiet: true });
