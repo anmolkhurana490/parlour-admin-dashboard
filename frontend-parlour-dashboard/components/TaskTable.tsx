@@ -34,7 +34,7 @@ const TaskTable = ({ editable }: { editable: boolean }) => {
         const response = await postData('tasks', newRowData);
         if (response) {
             setData([...data, {
-                _id: response.task._id,
+                _id: response._id,
                 title: newRowData?.title || '',
                 description: newRowData?.description || '',
                 assignedTo: newRowData?.assignedTo || '',

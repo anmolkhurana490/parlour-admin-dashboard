@@ -32,7 +32,7 @@ const EmployeeTable = ({ editable }: { editable: boolean }) => {
     const response = await postData('employees', newRowData);
     if (response) {
       setData([...data, {
-        _id: response.employee._id,
+        _id: response._id,
         email: newRowData?.email || '',
         name: newRowData?.name || '',
         position: newRowData?.position || '',
